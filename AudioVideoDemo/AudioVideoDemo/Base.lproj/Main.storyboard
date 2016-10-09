@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-Vj-2ta">
+                                <rect key="frame" x="246" y="28" width="32" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TWo-Tn-cbE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ax-qp-LWM">
+                                <rect key="frame" x="322" y="28" width="32" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jUa-ku-7TX"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fLr-a7-xXL">
+                                <rect key="frame" x="18" y="165" width="564" height="31"/>
+                                <animations/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fma-jM-jSj">
+                                <rect key="frame" x="20" y="101" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuO-5m-ZQ8">
+                                <rect key="frame" x="266" y="245" width="68" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="PlayVideo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mPU-Qd-48H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fLr-a7-xXL" firstAttribute="top" secondItem="fma-jM-jSj" secondAttribute="bottom" constant="43" id="0pX-qp-PwN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fLr-a7-xXL" secondAttribute="trailing" id="6Zt-gX-xAa"/>
+                            <constraint firstItem="VuO-5m-ZQ8" firstAttribute="top" secondItem="fLr-a7-xXL" secondAttribute="bottom" constant="50" id="AaW-0O-r5X"/>
+                            <constraint firstItem="VuO-5m-ZQ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DEZ-cS-PIv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fma-jM-jSj" secondAttribute="trailing" id="Flf-1R-jZH"/>
+                            <constraint firstItem="1ax-qp-LWM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="H3U-cq-A3d"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fLr-a7-xXL" secondAttribute="leading" id="JaG-Hp-r2i"/>
+                            <constraint firstItem="TMQ-Vj-2ta" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MVn-5G-cF3"/>
+                            <constraint firstItem="TMQ-Vj-2ta" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-38" id="QLT-Ll-gig"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fma-jM-jSj" secondAttribute="leading" id="Y2u-Yv-HTX"/>
+                            <constraint firstItem="1ax-qp-LWM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="38" id="moW-Xl-ekM"/>
+                            <constraint firstItem="fLr-a7-xXL" firstAttribute="top" secondItem="TMQ-Vj-2ta" secondAttribute="bottom" constant="107" id="tFT-fp-KtL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTime" destination="fma-jM-jSj" id="K8K-ig-lJ6"/>
+                        <outlet property="slider" destination="fLr-a7-xXL" id="KQH-MZ-Maw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="337"/>
+        </scene>
+    </scenes>
+</document>

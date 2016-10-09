@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2.png" translatesAutoresizingMaskIntoConstraints="NO" id="20a-xr-yeg">
+                                <rect key="frame" x="20" y="28" width="270" height="292"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="292" id="5fo-we-dh9"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="w1y-nF-KNR" appends="YES" id="Vpl-2Q-mwQ"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image4.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Sc-2U-1Qf">
+                                <rect key="frame" x="310" y="28" width="270" height="292"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hsA-Fj-F4J" appends="YES" id="9AV-Ut-hXT"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Sc-2U-1Qf" firstAttribute="leading" secondItem="20a-xr-yeg" secondAttribute="trailing" constant="20" id="AnT-uU-WsF"/>
+                            <constraint firstItem="8Sc-2U-1Qf" firstAttribute="width" secondItem="20a-xr-yeg" secondAttribute="width" id="Eac-P1-cFN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="20a-xr-yeg" secondAttribute="leading" id="e5A-Oq-Jap"/>
+                            <constraint firstItem="8Sc-2U-1Qf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="hml-bU-HNy"/>
+                            <constraint firstItem="20a-xr-yeg" firstAttribute="height" secondItem="8Sc-2U-1Qf" secondAttribute="height" id="l12-bs-RTg"/>
+                            <constraint firstItem="20a-xr-yeg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nRg-TB-kMy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Sc-2U-1Qf" secondAttribute="trailing" id="wp4-TC-Ndr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewLeft" destination="20a-xr-yeg" id="ulX-O3-Uv1"/>
+                        <outlet property="imageViewRight" destination="8Sc-2U-1Qf" id="hz2-q2-vb4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="w1y-nF-KNR">
+                    <connections>
+                        <action selector="rightSwipe:" destination="BYZ-38-t0r" id="TdE-QH-73i"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="hsA-Fj-F4J">
+                    <connections>
+                        <action selector="leftSwipe:" destination="BYZ-38-t0r" id="2JM-hH-xsf"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="305" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image2.png" width="100" height="100"/>
+        <image name="image4.png" width="100" height="100"/>
+    </resources>
+</document>

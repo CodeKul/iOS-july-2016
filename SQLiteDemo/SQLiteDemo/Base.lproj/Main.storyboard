@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roll number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QPo-jr-Zac">
+                                <rect key="frame" x="20" y="28" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xS9-j3-CrS">
+                                <rect key="frame" x="20" y="84" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Marks" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bE7-a8-24V">
+                                <rect key="frame" x="20" y="143" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBY-MB-apA">
+                                <rect key="frame" x="176" y="204" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddo-32-NzR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4n-dm-HnX">
+                                <rect key="frame" x="234" y="204" width="51" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e0U-38-7wy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAN-F9-Yc3">
+                                <rect key="frame" x="314" y="204" width="45" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dd8-Kd-w0n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vt4-mk-xMn">
+                                <rect key="frame" x="387" y="204" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xmg-bA-w5B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSE-08-PAh">
+                                <rect key="frame" x="447" y="204" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="find"/>
+                                <connections>
+                                    <action selector="findRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJM-j2-xaF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wAN-F9-Yc3" firstAttribute="leading" secondItem="C4n-dm-HnX" secondAttribute="trailing" constant="29" id="0j5-Dh-dS6"/>
+                            <constraint firstItem="bE7-a8-24V" firstAttribute="width" secondItem="xS9-j3-CrS" secondAttribute="width" id="2jY-BG-odh"/>
+                            <constraint firstItem="IBY-MB-apA" firstAttribute="top" secondItem="bE7-a8-24V" secondAttribute="bottom" constant="31" id="5lU-5r-MX2"/>
+                            <constraint firstItem="Vt4-mk-xMn" firstAttribute="leading" secondItem="wAN-F9-Yc3" secondAttribute="trailing" constant="28" id="9CB-d0-UyT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QPo-jr-Zac" secondAttribute="trailing" id="OCE-4r-z01"/>
+                            <constraint firstItem="C4n-dm-HnX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-40" id="QMF-ki-iYb"/>
+                            <constraint firstItem="xS9-j3-CrS" firstAttribute="centerX" secondItem="QPo-jr-Zac" secondAttribute="centerX" id="REO-a9-rMS"/>
+                            <constraint firstItem="QPo-jr-Zac" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Rqs-5e-73E"/>
+                            <constraint firstItem="wAN-F9-Yc3" firstAttribute="top" secondItem="bE7-a8-24V" secondAttribute="bottom" constant="31" id="Tbk-5g-CG8"/>
+                            <constraint firstItem="C4n-dm-HnX" firstAttribute="leading" secondItem="IBY-MB-apA" secondAttribute="trailing" constant="24" id="TyE-Q2-NWN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="QPo-jr-Zac" secondAttribute="leading" id="YED-hX-bm1"/>
+                            <constraint firstItem="bE7-a8-24V" firstAttribute="centerX" secondItem="xS9-j3-CrS" secondAttribute="centerX" id="ccR-Z6-KM0"/>
+                            <constraint firstItem="BSE-08-PAh" firstAttribute="leading" secondItem="Vt4-mk-xMn" secondAttribute="trailing" constant="22" id="fT3-6k-F9G"/>
+                            <constraint firstItem="Vt4-mk-xMn" firstAttribute="top" secondItem="bE7-a8-24V" secondAttribute="bottom" constant="31" id="ilV-Yq-Pdx"/>
+                            <constraint firstItem="bE7-a8-24V" firstAttribute="top" secondItem="xS9-j3-CrS" secondAttribute="bottom" constant="29" id="lO4-9w-JJp"/>
+                            <constraint firstItem="BSE-08-PAh" firstAttribute="top" secondItem="bE7-a8-24V" secondAttribute="bottom" constant="31" id="obV-Zf-9Pr"/>
+                            <constraint firstItem="xS9-j3-CrS" firstAttribute="top" secondItem="QPo-jr-Zac" secondAttribute="bottom" constant="26" id="q2w-Fi-prI"/>
+                            <constraint firstItem="C4n-dm-HnX" firstAttribute="top" secondItem="bE7-a8-24V" secondAttribute="bottom" constant="31" id="q7Y-x3-Un2"/>
+                            <constraint firstItem="xS9-j3-CrS" firstAttribute="width" secondItem="QPo-jr-Zac" secondAttribute="width" id="zOT-dQ-S5n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtMarks" destination="bE7-a8-24V" id="gOH-dw-ZPs"/>
+                        <outlet property="txtName" destination="xS9-j3-CrS" id="BdA-gZ-fLu"/>
+                        <outlet property="txtRno" destination="QPo-jr-Zac" id="7Z0-iQ-udB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="337"/>
+        </scene>
+    </scenes>
+</document>

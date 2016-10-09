@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ly-KW-8hQ">
+                                <rect key="frame" x="20" y="28" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGJ-1M-079">
+                                <rect key="frame" x="283" y="107" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FaO-Ac-hbM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URi-Fe-jcc">
+                                <rect key="frame" x="281" y="155" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hak-YF-tQY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="URi-Fe-jcc" firstAttribute="top" secondItem="DGJ-1M-079" secondAttribute="bottom" constant="18" id="Bwt-vt-bmP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Ly-KW-8hQ" secondAttribute="trailing" id="D9k-xX-wcv"/>
+                            <constraint firstItem="8Ly-KW-8hQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="QdA-qa-TMb"/>
+                            <constraint firstItem="DGJ-1M-079" firstAttribute="centerX" secondItem="8Ly-KW-8hQ" secondAttribute="centerX" id="S8U-z6-rEr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8Ly-KW-8hQ" secondAttribute="leading" id="eoD-6R-0xR"/>
+                            <constraint firstItem="URi-Fe-jcc" firstAttribute="centerX" secondItem="DGJ-1M-079" secondAttribute="centerX" id="t8E-iH-QXu"/>
+                            <constraint firstItem="DGJ-1M-079" firstAttribute="top" secondItem="8Ly-KW-8hQ" secondAttribute="bottom" constant="49" id="uIg-L3-anh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtName" destination="8Ly-KW-8hQ" id="S6V-ff-02t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="337"/>
+        </scene>
+    </scenes>
+</document>
