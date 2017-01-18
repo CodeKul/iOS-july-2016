@@ -21,8 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-/*
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.geonames.org/postalCodeLookupJSON?postalcode=6600&country=AT&username=varun05"]];
+
+    //    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.geonames.org/postalCodeLookupJSON?postalcode=6600&country=AT&username=varun05"]];
+    
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.geonames.org/citiesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&lang=de&username=varun05"]];
     
     NSURLSession *session = [NSURLSession sharedSession];
     
@@ -34,7 +36,7 @@
         
         arrData = [dictData valueForKey:@"postalcodes"];
         
-        [myTableView reloadData];
+//        [myTableView reloadData];
         
         [myTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
         
@@ -43,8 +45,8 @@
     }];
     
     [dataTask resume];
- */
-    
+ 
+/*
     NSString *myUrlString = @"http://192.168.0.36:7171/bappa/bappa/saveBappa";
     //create string for parameters that we need to send in the HTTP POST body
     //create a NSURL object from the string data
@@ -99,7 +101,7 @@
     }];
     
     [dataTask resume];
-
+*/
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

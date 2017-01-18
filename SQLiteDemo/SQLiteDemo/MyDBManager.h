@@ -10,6 +10,7 @@
 
 @interface MyDBManager : NSObject
 
+
 -(void)copyDatabaseIntoDocumentsDirectory;
 
 +(MyDBManager*)getSharedInstance;

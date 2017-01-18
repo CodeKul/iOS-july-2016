@@ -21,8 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSURL *url = [NSURL URLWithString:@"http://www.news18.com/rss/hockey.xml"];
 
-    NSXMLParser *myParser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://www.news18.com/rss/hockey.xml"]];
+    NSXMLParser *myParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+    
     myParser.delegate = self;
     
     [myParser parse];
@@ -34,7 +37,7 @@
     if ([elementName isEqualToString:@"channel"]) {
         arrTitles = [[NSMutableArray alloc] init];
     }
-    else if ([elementName isEqualToString:@"description"]) {
+    else if ([elementName isEqualToString:@"title"]) {
         strData = [[NSMutableString alloc] init];
     }
 }
@@ -49,7 +52,7 @@
 
         [myTableView reloadData];
     }
-    else if ([elementName isEqualToString:@"description"]) {
+    else if ([elementName isEqualToString:@"title"]) {
         
         [arrTitles addObject:strData];
     }

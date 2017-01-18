@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SQLiteDemo/MyDBManager.m"
-            timestampString = "495615012.847113"
+            timestampString = "501570518.095479"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "-saveData:name:marks:"
-            landmarkType = "5">
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "+getSharedInstance"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SQLiteDemo/MyDBManager.m"
-            timestampString = "495616241.996304"
+            timestampString = "502464715.410002"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
-            landmarkName = "-updateDataWithRollNumber:name:marks:"
-            landmarkType = "5">
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-getDBPath"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -30,9 +30,11 @@
     
     NSLog(@"FilePath: %@",filePath);
     
-    NSArray *arr = @[@"SURAJ",@"VIDYA",@"CODEKUL"];
+//    NSArray *arr = @[@"SAGAR",@"CODEKUL"];
     
-    [arr writeToFile:filePath atomically:YES];
+    NSDictionary *dict = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"Sagar",@"4785748574",@"Pune", nil] forKeys:@[@"Name",@"Phone",@"City"]];
+    
+    [dict writeToFile:filePath atomically:YES];
     
 }
 

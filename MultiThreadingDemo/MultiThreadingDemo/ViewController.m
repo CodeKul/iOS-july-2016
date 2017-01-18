@@ -21,13 +21,19 @@
     [super viewDidLoad];
 
 
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
     dispatch_queue_t myQueue = dispatch_queue_create("myQueue", NULL);
     
+    [spinner startAnimating];
+
     dispatch_async(myQueue, ^{
-       
+        
         NSLog(@"Background thread");
         
-        [spinner startAnimating];
         NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://upload.wikimedia.org/wikipedia/commons/4/46/Indian_Army_T-72_image_2.jpg"]];
         NSLog(@"Downloaded");
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -38,6 +44,7 @@
     });
     
     NSLog(@"Main thread");
+
 }
 
 - (void)didReceiveMemoryWarning {

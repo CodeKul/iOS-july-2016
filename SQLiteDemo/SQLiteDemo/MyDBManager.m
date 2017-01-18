@@ -141,6 +141,7 @@ static MyDBManager *sharedInstance = nil;
             {
                 NSString *name = [[NSString alloc] initWithUTF8String: (const char *) sqlite3_column_text(statement, 0)];
                 [resultArray addObject:name];
+                
                 NSString *marks = [[NSString alloc]initWithUTF8String:
                                   (const char *) sqlite3_column_text(statement, 1)];
                 [resultArray addObject:marks];

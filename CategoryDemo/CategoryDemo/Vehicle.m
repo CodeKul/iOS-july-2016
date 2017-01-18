@@ -7,7 +7,7 @@
 //
 
 #import "Vehicle.h"
-
+#import "NSString+MyString.h"
 @implementation Vehicle
 
 - (instancetype) initWithType:(NSString *)t
@@ -20,6 +20,10 @@
 }
 
 -(void) move{
+    
+    NSString *strMarks = @"Marks";
+    NSLog(@"Marks: %f",strMarks.marks);
+    
     NSLog(@"%@ is started to move",type);
 }
 

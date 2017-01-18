@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B94F2E71DF414500051524D /* NSString+MyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B94F2E61DF414500051524D /* NSString+MyString.m */; };
 		8BAA90321D373D7E00F9F414 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA90311D373D7E00F9F414 /* main.m */; };
 		8BAA903A1D373E2700F9F414 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA90391D373E2700F9F414 /* Vehicle.m */; };
 		8BAA903D1D373F4100F9F414 /* Vehicle+AdvanceV.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA903C1D373F4100F9F414 /* Vehicle+AdvanceV.m */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8B94F2E51DF414500051524D /* NSString+MyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MyString.h"; sourceTree = "<group>"; };
+		8B94F2E61DF414500051524D /* NSString+MyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MyString.m"; sourceTree = "<group>"; };
 		8BAA902E1D373D7E00F9F414 /* CategoryDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CategoryDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BAA90311D373D7E00F9F414 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BAA90381D373E2700F9F414 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 				8BAA90391D373E2700F9F414 /* Vehicle.m */,
 				8BAA903B1D373F4100F9F414 /* Vehicle+AdvanceV.h */,
 				8BAA903C1D373F4100F9F414 /* Vehicle+AdvanceV.m */,
+				8B94F2E51DF414500051524D /* NSString+MyString.h */,
+				8B94F2E61DF414500051524D /* NSString+MyString.m */,
 				8BAA903E1D3740C800F9F414 /* NSString+Date.h */,
 				8BAA903F1D3740C800F9F414 /* NSString+Date.m */,
 			);
@@ -144,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BAA90491D374B1B00F9F414 /* Bike+Color.m in Sources */,
+				8B94F2E71DF414500051524D /* NSString+MyString.m in Sources */,
 				8BAA90461D374AAA00F9F414 /* Bike.m in Sources */,
 				8BAA903D1D373F4100F9F414 /* Vehicle+AdvanceV.m in Sources */,
 				8BAA903A1D373E2700F9F414 /* Vehicle.m in Sources */,

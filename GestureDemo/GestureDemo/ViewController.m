@@ -18,7 +18,7 @@
     [super viewDidLoad];
 
     UISwipeGestureRecognizer *gesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(viewLeftSwipe:)];
-    gesture.direction = UISwipeGestureRecognizerDirectionRight;
+    gesture.direction = UISwipeGestureRecognizerDirectionLeft;
     [view2 addGestureRecognizer:gesture];
     
     UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressGesture:)];
